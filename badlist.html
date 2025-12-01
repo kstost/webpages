@@ -231,11 +231,11 @@
     <div class="container">
         <header>
             <h1>임산부 금기 식품 대사전</h1>
-            <p class="subtitle">300여 가지 이상의 식품을 망라한 가장 보수적이고 포괄적인 안전 가이드</p>
+            <p class="subtitle">임산부를 위한 보수적이고 포괄적인 안전 가이드</p>
         </header>
 
         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="🔍 궁금한 음식을 검색하세요 (예: 참치, 치즈, 허브티, 회)">
+            <input type="text" id="searchInput" placeholder="🔍 궁금한 음식을 검색하세요 (예: 참치, 치즈, 허브티, E102)">
         </div>
 
         <div class="nav-pills">
@@ -243,8 +243,7 @@
             <a href="#raw" class="nav-pill">🥩 날것/비가열 육류</a>
             <a href="#dairy" class="nav-pill">🧀 유제품/알</a>
             <a href="#tea" class="nav-pill">🌿 차/허브/한약</a>
-            <a href="#drink" class="nav-pill">☕ 음료/알코올</a>
-            <a href="#processed" class="nav-pill">🍔 가공식품/기타</a>
+            <a href="#additives" class="nav-pill">🧪 첨가물/가공식품</a>
         </div>
 
         <div id="dictionary">
@@ -273,7 +272,7 @@
                 <div class="dict-item" data-name="킹매커럴 대삼치">
                     <div class="item-header"><span class="item-name">킹매커럴 (King Mackerel)</span><span
                             class="risk-badge risk-high">절대 금지</span></div>
-                    <div class="item-desc">서양의 대형 삼치류. (한국의 일반 삼치와 다름)</div>
+                    <div class="item-desc">서양의 대형 삼치류.</div>
                     <div class="item-reason">수은 함량이 매우 높음.</div>
                 </div>
                 <div class="dict-item" data-name="옥돔 타일피쉬">
@@ -282,17 +281,23 @@
                     <div class="item-desc">특히 멕시코만 산 옥돔.</div>
                     <div class="item-reason">수은 오염도가 심각한 수준.</div>
                 </div>
-                <div class="dict-item" data-name="참다랑어 참치회">
-                    <div class="item-header"><span class="item-name">참다랑어 (Bluefin Tuna)</span><span
+                <div class="dict-item" data-name="오렌지 러피">
+                    <div class="item-header"><span class="item-name">오렌지 러피 (Orange Roughy)</span><span
                             class="risk-badge risk-high">절대 금지</span></div>
-                    <div class="item-desc">고급 횟감용 참치 (혼마구로).</div>
-                    <div class="item-reason">대형 어종으로 수은 축적량이 높음. 날것 섭취 위험 포함.</div>
+                    <div class="item-desc">심해 어종.</div>
+                    <div class="item-reason">수명이 길어(100년 이상) 수은 축적량이 매우 높음.</div>
                 </div>
                 <div class="dict-item" data-name="눈다랑어">
                     <div class="item-header"><span class="item-name">눈다랑어 (Bigeye Tuna)</span><span
                             class="risk-badge risk-high">절대 금지</span></div>
                     <div class="item-desc">횟감, 초밥용 참치.</div>
-                    <div class="item-reason">수은 함량이 높은 참치 종류 중 하나.</div>
+                    <div class="item-reason">수은 함량이 높은 참치 종류.</div>
+                </div>
+                <div class="dict-item" data-name="참다랑어">
+                    <div class="item-header"><span class="item-name">참다랑어 (Bluefin Tuna)</span><span
+                            class="risk-badge risk-high">절대 금지</span></div>
+                    <div class="item-desc">고급 횟감용 참치 (혼마구로).</div>
+                    <div class="item-reason">대형 어종으로 수은 축적량이 높음.</div>
                 </div>
                 <div class="dict-item" data-name="날개다랑어">
                     <div class="item-header"><span class="item-name">날개다랑어 (Albacore)</span><span
@@ -300,68 +305,133 @@
                     <div class="item-desc">백색 참치 (White Tuna).</div>
                     <div class="item-reason">일반 통조림 참치보다 수은 함량이 3배 높음. 주 1회(170g) 이하로 엄격 제한.</div>
                 </div>
-                <div class="dict-item" data-name="오렌지 러피">
-                    <div class="item-header"><span class="item-name">오렌지 러피 (Orange Roughy)</span><span
-                            class="risk-badge risk-high">절대 금지</span></div>
-                    <div class="item-desc">심해 어종.</div>
-                    <div class="item-reason">수명이 길어(100년 이상) 수은 축적량이 매우 높음.</div>
+                <div class="dict-item" data-name="가오리 홍어">
+                    <div class="item-header"><span class="item-name">가오리 / 홍어 (Ray)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">찜, 무침, 삭힌 홍어.</div>
+                    <div class="item-reason">중형 어종으로 수은 함량이 다소 높을 수 있음.</div>
                 </div>
-                <div class="dict-item" data-name="생굴 굴">
+                <div class="dict-item" data-name="바라문디">
+                    <div class="item-header"><span class="item-name">바라문디 (Barramundi)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">농어목 어류.</div>
+                    <div class="item-reason">일부 지역 양식/자연산에서 수은 검출 보고.</div>
+                </div>
+                <div class="dict-item" data-name="젬피쉬">
+                    <div class="item-header"><span class="item-name">젬피쉬 (Gemfish)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">심해 어종.</div>
+                    <div class="item-reason">수은 함량이 높은 편.</div>
+                </div>
+                <div class="dict-item" data-name="링">
+                    <div class="item-header"><span class="item-name">링 (Ling)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">대구류.</div>
+                    <div class="item-reason">일부 대형 개체에서 수은 축적 가능성.</div>
+                </div>
+                <div class="dict-item" data-name="남방참다랑어">
+                    <div class="item-header"><span class="item-name">남방참다랑어 (Southern Bluefin)</span><span
+                            class="risk-badge risk-high">절대 금지</span></div>
+                    <div class="item-desc">횟감용 참치.</div>
+                    <div class="item-reason">수은 함량 높음.</div>
+                </div>
+                <div class="dict-item" data-name="아히 튜나">
+                    <div class="item-header"><span class="item-name">아히 튜나 (Ahi Tuna)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">하와이안 포케 등에 쓰이는 참치 (주로 눈다랑어/황다랑어).</div>
+                    <div class="item-reason">수은 함량이 높은 종이 섞여 있을 수 있음.</div>
+                </div>
+                <div class="dict-item" data-name="황다랑어">
+                    <div class="item-header"><span class="item-name">황다랑어 (Yellowfin Tuna)</span><span
+                            class="risk-badge risk-med">주의/제한</span></div>
+                    <div class="item-desc">횟감, 통조림.</div>
+                    <div class="item-reason">수은 함량이 중간 수준. 섭취량 제한 필요.</div>
+                </div>
+                <div class="dict-item" data-name="그루퍼 다금바리">
+                    <div class="item-header"><span class="item-name">그루퍼 / 다금바리</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">대형 어종.</div>
+                    <div class="item-reason">수은 축적 가능성 존재.</div>
+                </div>
+                <div class="dict-item" data-name="칠레 농어 메로">
+                    <div class="item-header"><span class="item-name">칠레 농어 (메로)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">메로 구이.</div>
+                    <div class="item-reason">심해 어종으로 수은 함량이 다소 높음.</div>
+                </div>
+                <div class="dict-item" data-name="생굴">
                     <div class="item-header"><span class="item-name">생굴 (Raw Oysters)</span><span
                             class="risk-badge risk-high">절대 금지</span></div>
                     <div class="item-desc">익히지 않은 굴.</div>
-                    <div class="item-reason">노로바이러스, 비브리오 패혈증 감염 위험 1순위.</div>
+                    <div class="item-reason">노로바이러스, 비브리오 패혈증 위험 1순위.</div>
                 </div>
-                <div class="dict-item" data-name="조개류 홍합">
-                    <div class="item-header"><span class="item-name">생 조개류 (Clams/Mussels)</span><span
+                <div class="dict-item" data-name="생조개">
+                    <div class="item-header"><span class="item-name">생 조개 (Raw Clams)</span><span
                             class="risk-badge risk-high">절대 금지</span></div>
-                    <div class="item-desc">익히지 않은 조개, 홍합.</div>
-                    <div class="item-reason">패류 독소 및 세균 감염 위험. 반드시 입이 벌어질 때까지 가열.</div>
+                    <div class="item-desc">익히지 않은 조개류.</div>
+                    <div class="item-reason">패류 독소 및 세균 감염 위험.</div>
                 </div>
-                <div class="dict-item" data-name="산낙지">
-                    <div class="item-header"><span class="item-name">산낙지</span><span
-                            class="risk-badge risk-high">금지</span></div>
-                    <div class="item-desc">살아있는 낙지.</div>
-                    <div class="item-reason">기도 폐쇄 위험 및 기생충 감염 가능성.</div>
+                <div class="dict-item" data-name="홍합">
+                    <div class="item-header"><span class="item-name">홍합 (Mussels)</span><span
+                            class="risk-badge risk-high">금지 (비가열)</span></div>
+                    <div class="item-desc">덜 익힌 홍합.</div>
+                    <div class="item-reason">충분히 익히지 않으면 식중독 위험.</div>
                 </div>
-                <div class="dict-item" data-name="게장 간장게장">
-                    <div class="item-header"><span class="item-name">간장게장 / 양념게장</span><span
-                            class="risk-badge risk-high">금지</span></div>
-                    <div class="item-desc">생꽃게 절임.</div>
-                    <div class="item-reason">폐흡충 등 기생충 감염 위험. 가열하지 않은 생물 섭취는 위험.</div>
+                <div class="dict-item" data-name="가리비">
+                    <div class="item-header"><span class="item-name">가리비 (Scallops)</span><span
+                            class="risk-badge risk-high">금지 (비가열)</span></div>
+                    <div class="item-desc">가리비 회.</div>
+                    <div class="item-reason">비브리오균 위험. 반드시 익혀 먹어야 함.</div>
                 </div>
-                <div class="dict-item" data-name="새우장">
-                    <div class="item-header"><span class="item-name">간장 새우장</span><span
+                <div class="dict-item" data-name="사시미 회">
+                    <div class="item-header"><span class="item-name">사시미 (Sashimi)</span><span
                             class="risk-badge risk-high">금지</span></div>
-                    <div class="item-desc">생새우 절임.</div>
-                    <div class="item-reason">비브리오균 및 세균 감염 위험.</div>
+                    <div class="item-desc">모든 종류의 생선회.</div>
+                    <div class="item-reason">기생충(아니사키스) 및 리스테리아 위험.</div>
+                </div>
+                <div class="dict-item" data-name="초밥 스시">
+                    <div class="item-header"><span class="item-name">초밥 (Sushi)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">날생선 초밥.</div>
+                    <div class="item-reason">날생선 위험. 익힌 초밥(새우, 계란)은 가능.</div>
+                </div>
+                <div class="dict-item" data-name="세비체">
+                    <div class="item-header"><span class="item-name">세비체 (Ceviche)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">라임/레몬즙에 절인 해산물.</div>
+                    <div class="item-reason">산으로 '익히는' 방식은 기생충을 죽이지 못함.</div>
+                </div>
+                <div class="dict-item" data-name="포케">
+                    <div class="item-header"><span class="item-name">포케 (Poke)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">하와이식 날생선 덮밥.</div>
+                    <div class="item-reason">날생선(참치, 연어) 사용으로 위험.</div>
                 </div>
                 <div class="dict-item" data-name="훈제연어">
                     <div class="item-header"><span class="item-name">냉장 훈제 연어</span><span
                             class="risk-badge risk-high">금지</span></div>
-                    <div class="item-desc">가열하지 않고 먹는 훈제 연어 (Lox, Nova style).</div>
-                    <div class="item-reason">리스테리아균 오염 가능성 높음. 통조림은 안전하나 냉장 제품은 위험.</div>
+                    <div class="item-desc">가열하지 않은 훈제 연어.</div>
+                    <div class="item-reason">리스테리아균 오염 가능성 높음.</div>
                 </div>
-                <div class="dict-item" data-name="초밥 스시">
-                    <div class="item-header"><span class="item-name">생선 초밥 (Sushi)</span><span
-                            class="risk-badge risk-high">금지</span></div>
-                    <div class="item-desc">날생선이 올라간 초밥.</div>
-                    <div class="item-reason">기생충(아니사키스) 및 세균 위험. 익힌 재료(새우, 계란, 장어) 초밥만 가능.</div>
+                <div class="dict-item" data-name="청어 절임">
+                    <div class="item-header"><span class="item-name">청어 절임 (Pickled Herring)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">식초에 절인 청어.</div>
+                    <div class="item-reason">제조 과정 위생 및 나트륨 함량 주의.</div>
                 </div>
-                <div class="dict-item" data-name="물회">
-                    <div class="item-header"><span class="item-name">물회</span><span
+                <div class="dict-item" data-name="성게알 우니">
+                    <div class="item-header"><span class="item-name">성게알 (Sea Urchin)</span><span
                             class="risk-badge risk-high">금지</span></div>
-                    <div class="item-desc">날생선이 들어간 차가운 국물 요리.</div>
-                    <div class="item-reason">날생선 위험 + 위생 관리(균 증식) 취약.</div>
+                    <div class="item-desc">날것으로 섭취하는 우니.</div>
+                    <div class="item-reason">비브리오균 감염 위험.</div>
                 </div>
-                <div class="dict-item" data-name="과메기">
-                    <div class="item-header"><span class="item-name">과메기</span><span
-                            class="risk-badge risk-high">금지</span></div>
-                    <div class="item-desc">말린 꽁치/청어.</div>
-                    <div class="item-reason">비가열 건조 과정에서 위생 문제 및 산패 위험.</div>
+                <div class="dict-item" data-name="코끼리조개">
+                    <div class="item-header"><span class="item-name">코끼리조개 (Geoduck)</span><span
+                            class="risk-badge risk-high">금지 (비가열)</span></div>
+                    <div class="item-desc">회로 섭취 시.</div>
+                    <div class="item-reason">패류 독소 및 세균 위험.</div>
                 </div>
             </div>
-
             <!-- 날것/육류 -->
             <h2 id="raw" class="category-title">🥩 날것 및 비가열 육류 (Raw Meat & Poultry)</h2>
             <div class="dict-grid">
@@ -419,6 +489,42 @@
                     <div class="item-desc">덜 익힌 닭고기.</div>
                     <div class="item-reason">살모넬라 및 캄필로박터균 감염 위험 100%.</div>
                 </div>
+                <div class="dict-item" data-name="키베">
+                    <div class="item-header"><span class="item-name">키베 (Raw Kibbeh)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">중동식 생고기 요리.</div>
+                    <div class="item-reason">익히지 않은 고기 사용으로 기생충 위험.</div>
+                </div>
+                <div class="dict-item" data-name="카르파초">
+                    <div class="item-header"><span class="item-name">카르파초 (Carpaccio)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">이탈리아식 생고기 요리.</div>
+                    <div class="item-reason">톡소플라즈마 감염 위험.</div>
+                </div>
+                <div class="dict-item" data-name="메트부어스트">
+                    <div class="item-header"><span class="item-name">메트부어스트 (Metwurst)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">독일식 생소시지.</div>
+                    <div class="item-reason">가열하지 않은 돼지고기 사용.</div>
+                </div>
+                <div class="dict-item" data-name="티부어스트">
+                    <div class="item-header"><span class="item-name">티부어스트 (Teewurst)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">발라먹는 생소시지.</div>
+                    <div class="item-reason">리스테리아 및 E형 간염 바이러스 위험.</div>
+                </div>
+                <div class="dict-item" data-name="생베이컨">
+                    <div class="item-header"><span class="item-name">생 베이컨 (Raw Bacon)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">익히지 않은 베이컨.</div>
+                    <div class="item-reason">기생충 및 세균 위험. 바삭하게 익혀야 함.</div>
+                </div>
+                <div class="dict-item" data-name="덜 익은 햄버거">
+                    <div class="item-header"><span class="item-name">덜 익은 햄버거 패티</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">미디엄 레어 버거.</div>
+                    <div class="item-reason">분쇄육은 표면의 균이 내부로 들어가므로 반드시 속까지 완전히 익혀야 함 (대장균 O157 위험).</div>
+                </div>
             </div>
 
             <!-- 유제품/알 -->
@@ -445,7 +551,7 @@
                 <div class="dict-item" data-name="블루치즈 고르곤졸라">
                     <div class="item-header"><span class="item-name">블루치즈 / 고르곤졸라</span><span
                             class="risk-badge risk-high">금지 (비살균)</span></div>
-                    <div class="item-desc">푸른 곰팡이 치즈.</div>
+                    <div class="item-desc">푸른 곰팡이 치즈 (Roquefort, Stilton, Danish Blue).</div>
                     <div class="item-reason">곰팡이 숙성 과정에서 유해균 증식 가능성. 익혀 먹으면 안전.</div>
                 </div>
                 <div class="dict-item" data-name="페타 치즈">
@@ -454,11 +560,47 @@
                     <div class="item-desc">양유/염소유로 만든 그리스 치즈.</div>
                     <div class="item-reason">전통 방식은 비살균 원유 사용. 마트 시판 제품은 대부분 살균되어 안전하나 확인 필요.</div>
                 </div>
+                <div class="dict-item" data-name="케소 프레스코">
+                    <div class="item-header"><span class="item-name">케소 프레스코 (Queso Fresco)</span><span
+                            class="risk-badge risk-high">금지 (비살균)</span></div>
+                    <div class="item-desc">멕시코식 신선 치즈.</div>
+                    <div class="item-reason">비살균 원유로 만드는 경우가 많아 리스테리아 감염 사례 빈번.</div>
+                </div>
+                <div class="dict-item" data-name="케소 블랑코">
+                    <div class="item-header"><span class="item-name">케소 블랑코 (Queso Blanco)</span><span
+                            class="risk-badge risk-high">금지 (비살균)</span></div>
+                    <div class="item-desc">하얀 치즈.</div>
+                    <div class="item-reason">살균 여부 불분명한 경우 섭취 금지.</div>
+                </div>
+                <div class="dict-item" data-name="파넬라 치즈">
+                    <div class="item-header"><span class="item-name">파넬라 (Panela)</span><span
+                            class="risk-badge risk-high">금지 (비살균)</span></div>
+                    <div class="item-desc">바구니 모양 치즈.</div>
+                    <div class="item-reason">리스테리아 위험.</div>
+                </div>
+                <div class="dict-item" data-name="셰브르 염소치즈">
+                    <div class="item-header"><span class="item-name">셰브르 (Chèvre)</span><span
+                            class="risk-badge risk-high">금지 (비살균)</span></div>
+                    <div class="item-desc">염소젖 치즈.</div>
+                    <div class="item-reason">겉면에 곰팡이가 핀 숙성형은 피하는 것이 좋음.</div>
+                </div>
                 <div class="dict-item" data-name="리코타 치즈">
                     <div class="item-header"><span class="item-name">리코타 치즈 (비살균)</span><span
                             class="risk-badge risk-med">주의</span></div>
                     <div class="item-desc">신선 치즈.</div>
                     <div class="item-reason">수분 함량이 높아 균 증식이 쉬움. 살균 여부 및 보관 상태 확인.</div>
+                </div>
+                <div class="dict-item" data-name="탈레지오">
+                    <div class="item-header"><span class="item-name">탈레지오 (Taleggio)</span><span
+                            class="risk-badge risk-high">금지 (비살균)</span></div>
+                    <div class="item-desc">이탈리아 세척 치즈.</div>
+                    <div class="item-reason">껍질 부분에 균이 존재할 수 있음.</div>
+                </div>
+                <div class="dict-item" data-name="바슈랭">
+                    <div class="item-header"><span class="item-name">바슈랭 (Vacherin)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">스위스/프랑스 연성 치즈.</div>
+                    <div class="item-reason">비살균 원유 사용 가능성.</div>
                 </div>
                 <div class="dict-item" data-name="날달걀">
                     <div class="item-header"><span class="item-name">날달걀 (Raw Eggs)</span><span
@@ -490,14 +632,37 @@
                     <div class="item-desc">에그 베네딕트 소스.</div>
                     <div class="item-reason">날달걀 노른자를 저온에서 조리하여 살균되지 않음.</div>
                 </div>
+                <div class="dict-item" data-name="베어네즈 소스">
+                    <div class="item-header"><span class="item-name">베어네즈 소스 (Béarnaise)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">스테이크 소스.</div>
+                    <div class="item-reason">홀랜다이즈와 마찬가지로 날달걀 노른자 사용.</div>
+                </div>
+                <div class="dict-item" data-name="시저 드레싱">
+                    <div class="item-header"><span class="item-name">시저 샐러드 드레싱</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">전통 방식 드레싱.</div>
+                    <div class="item-reason">날달걀이 들어감. 시판 제품은 대부분 살균 달걀을 쓰지만 수제는 주의.</div>
+                </div>
                 <div class="dict-item" data-name="쿠키 반죽">
                     <div class="item-header"><span class="item-name">쿠키 도우 (Raw Dough)</span><span
                             class="risk-badge risk-high">금지</span></div>
                     <div class="item-desc">익히지 않은 반죽 맛보기.</div>
                     <div class="item-reason">날달걀(살모넬라)과 생밀가루(대장균)의 이중 위험.</div>
                 </div>
+                <div class="dict-item" data-name="에그노그">
+                    <div class="item-header"><span class="item-name">에그노그 (Eggnog)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">크리스마스 음료.</div>
+                    <div class="item-reason">전통적으로 날달걀과 술을 섞어 만듦.</div>
+                </div>
+                <div class="dict-item" data-name="수제 마요네즈">
+                    <div class="item-header"><span class="item-name">수제 마요네즈</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">집이나 식당에서 직접 만든 것.</div>
+                    <div class="item-reason">살균되지 않은 날달걀 사용 가능성.</div>
+                </div>
             </div>
-
             <!-- 차/허브 -->
             <h2 id="tea" class="category-title">🌿 차, 허브 및 한약재 (Herbal Teas & Supplements)</h2>
             <div class="dict-grid">
@@ -603,58 +768,154 @@
                     <div class="item-desc">발효 음료.</div>
                     <div class="item-reason">미량의 알코올 함유 가능성 및 비살균 제품의 세균 오염 위험.</div>
                 </div>
-            </div>
-
-            <!-- 음료/알코올 -->
-            <h2 id="drink" class="category-title">☕ 음료 및 알코올 (Beverages)</h2>
-            <div class="dict-grid">
-                <div class="dict-item" data-name="술 알코올">
-                    <div class="item-header"><span class="item-name">모든 종류의 술</span><span
+                <div class="dict-item" data-name="블랙 코호시">
+                    <div class="item-header"><span class="item-name">블랙 코호시 (Black Cohosh)</span><span
                             class="risk-badge risk-high">절대 금지</span></div>
-                    <div class="item-desc">맥주, 소주, 와인, 양주, 막걸리, 칵테일.</div>
-                    <div class="item-reason">태아 알코올 증후군. 안전한 양은 0입니다.</div>
+                    <div class="item-desc">승마 (허브).</div>
+                    <div class="item-reason">자궁 수축 유발 및 조산 위험.</div>
                 </div>
-                <div class="dict-item" data-name="무알코올 맥주">
-                    <div class="item-header"><span class="item-name">비알코올 맥주 (Non-alcoholic)</span><span
-                            class="risk-badge risk-med">주의</span></div>
-                    <div class="item-desc">알코올 1% 미만 함유 제품.</div>
-                    <div class="item-reason">'무알코올(0.00%)'과 혼동 주의. 미량의 알코올도 태아에게 갈 수 있음.</div>
+                <div class="dict-item" data-name="블루 코호시">
+                    <div class="item-header"><span class="item-name">블루 코호시 (Blue Cohosh)</span><span
+                            class="risk-badge risk-high">절대 금지</span></div>
+                    <div class="item-desc">허브.</div>
+                    <div class="item-reason">강력한 자궁 수축제로 노동 유도에 쓰였음. 태아 심부전 위험.</div>
                 </div>
-                <div class="dict-item" data-name="에너지 드링크">
-                    <div class="item-header"><span class="item-name">에너지 드링크</span><span
+                <div class="dict-item" data-name="페니로얄">
+                    <div class="item-header"><span class="item-name">페니로얄 (Pennyroyal)</span><span
+                            class="risk-badge risk-high">절대 금지</span></div>
+                    <div class="item-desc">민트류 허브.</div>
+                    <div class="item-reason">유산 유발 및 간 독성. 매우 위험.</div>
+                </div>
+                <div class="dict-item" data-name="쑥 웜우드">
+                    <div class="item-header"><span class="item-name">쑥 / 웜우드 (Wormwood)</span><span
                             class="risk-badge risk-high">금지</span></div>
-                    <div class="item-desc">레드불, 몬스터, 핫식스 등.</div>
-                    <div class="item-reason">고카페인 + 타우린 + 과라나 등 복합 성분의 안전성 미확인.</div>
+                    <div class="item-desc">쓴쑥.</div>
+                    <div class="item-reason">자궁 수축 유발. 한국의 식용 쑥도 과다 섭취는 주의 (따뜻한 성질).</div>
                 </div>
-                <div class="dict-item" data-name="커피 아메리카노">
-                    <div class="item-header"><span class="item-name">고카페인 커피</span><span
-                            class="risk-badge risk-med">주의</span></div>
-                    <div class="item-desc">하루 2잔 이상의 커피, 콜드브루.</div>
-                    <div class="item-reason">하루 200mg 이상 섭취 시 유산, 저체중아 위험.</div>
+                <div class="dict-item" data-name="야로">
+                    <div class="item-header"><span class="item-name">야로 (Yarrow)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">서양 톱풀.</div>
+                    <div class="item-reason">유산 유발 가능성.</div>
                 </div>
-                <div class="dict-item" data-name="녹차 홍차">
-                    <div class="item-header"><span class="item-name">진한 녹차 / 홍차</span><span
-                            class="risk-badge risk-med">주의</span></div>
-                    <div class="item-desc">카페인 함유 차.</div>
-                    <div class="item-reason">커피 대용으로 많이 마시면 카페인 초과. 탄닌이 철분 흡수 방해.</div>
+                <div class="dict-item" data-name="센나">
+                    <div class="item-header"><span class="item-name">센나 (Senna)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">변비약 성분 허브.</div>
+                    <div class="item-reason">강력한 하제로 자궁 수축을 자극할 수 있음.</div>
                 </div>
-                <div class="dict-item" data-name="생과일 주스">
-                    <div class="item-header"><span class="item-name">비살균 착즙 주스</span><span
-                            class="risk-badge risk-med">주의</span></div>
-                    <div class="item-desc">길거리, 마트의 즉석 착즙 주스.</div>
-                    <div class="item-reason">살균되지 않아 과일 껍질의 세균 혼입 가능성.</div>
+                <div class="dict-item" data-name="에페드라 마황">
+                    <div class="item-header"><span class="item-name">에페드라 / 마황</span><span
+                            class="risk-badge risk-high">절대 금지</span></div>
+                    <div class="item-desc">다이어트 한약재.</div>
+                    <div class="item-reason">혈압 상승, 심장 박동 증가, 자궁 수축.</div>
                 </div>
-                <div class="dict-item" data-name="식혜">
-                    <div class="item-header"><span class="item-name">식혜</span><span
+                <div class="dict-item" data-name="골든실">
+                    <div class="item-header"><span class="item-name">골든실 (Goldenseal)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">항균 허브.</div>
+                    <div class="item-reason">베르베린 성분이 태반을 통과해 태아 뇌 발달 저해 우려.</div>
+                </div>
+                <div class="dict-item" data-name="주니퍼 베리">
+                    <div class="item-header"><span class="item-name">주니퍼 베리 (Juniper)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">향신료, 진(Gin)의 원료.</div>
+                    <div class="item-reason">자궁 수축 유발 및 신장 자극.</div>
+                </div>
+                <div class="dict-item" data-name="레몬그라스">
+                    <div class="item-header"><span class="item-name">레몬그라스 (Lemongrass)</span><span
                             class="risk-badge risk-med">주의</span></div>
-                    <div class="item-desc">엿기름 음료.</div>
-                    <div class="item-reason">엿기름이 젖을 마르게 함. 출산 전후 섭취 제한.</div>
+                    <div class="item-desc">태국 요리 허브.</div>
+                    <div class="item-reason">고농도 섭취 시 자궁 수축 가능성. 음식에 든 소량은 무방.</div>
+                </div>
+                <div class="dict-item" data-name="세인트존스워트">
+                    <div class="item-header"><span class="item-name">세인트존스워트</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">우울증 완화 허브.</div>
+                    <div class="item-reason">자궁 근육 긴장도 증가 및 유산 위험.</div>
+                </div>
+                <div class="dict-item" data-name="소팔메토">
+                    <div class="item-header"><span class="item-name">소팔메토 (Saw Palmetto)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">전립선 건강 허브.</div>
+                    <div class="item-reason">호르몬 교란 작용.</div>
+                </div>
+                <div class="dict-item" data-name="타임 백리향">
+                    <div class="item-header"><span class="item-name">타임 (Thyme)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">허브.</div>
+                    <div class="item-reason">요리용은 안전하나 고농도 오일/차는 자궁 자극 가능성.</div>
+                </div>
+                <div class="dict-item" data-name="아니스">
+                    <div class="item-header"><span class="item-name">아니스 (Anise)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">향신료.</div>
+                    <div class="item-reason">과다 섭취 시 호르몬 영향.</div>
+                </div>
+                <div class="dict-item" data-name="펜넬 회향">
+                    <div class="item-header"><span class="item-name">펜넬 / 회향 (Fennel)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">허브.</div>
+                    <div class="item-reason">에스트로겐 유사 작용으로 자궁 수축 유발 가능성.</div>
+                </div>
+                <div class="dict-item" data-name="강황 울금">
+                    <div class="item-header"><span class="item-name">강황 / 울금 (Turmeric)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">카레 원료.</div>
+                    <div class="item-reason">음식으로 먹는 카레는 안전. 고농도 환/가루 형태는 자궁 수축 우려.</div>
                 </div>
             </div>
-
-            <!-- 가공식품/기타 -->
-            <h2 id="processed" class="category-title">🍔 가공식품, 채소 및 기타 (Processed & Others)</h2>
+            <!-- 첨가물/가공식품 -->
+            <h2 id="additives" class="category-title">🧪 식품 첨가물 및 가공식품 (Additives & Processed Foods)</h2>
             <div class="dict-grid">
+                <div class="dict-item" data-name="사카린">
+                    <div class="item-header"><span class="item-name">사카린 (Saccharin)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">인공 감미료.</div>
+                    <div class="item-reason">태반을 통과하여 태아 방광에 축적 가능성. 동물 실험 발암 연관성 제기.</div>
+                </div>
+                <div class="dict-item" data-name="사이클라메이트">
+                    <div class="item-header"><span class="item-name">사이클라메이트 (Cyclamate)</span><span
+                            class="risk-badge risk-high">절대 금지</span></div>
+                    <div class="item-desc">인공 감미료.</div>
+                    <div class="item-reason">미국 등 여러 국가에서 금지된 성분.</div>
+                </div>
+                <div class="dict-item" data-name="MSG">
+                    <div class="item-header"><span class="item-name">MSG (Monosodium Glutamate)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">향미 증진제.</div>
+                    <div class="item-reason">일반적으로 안전하나, 과다 섭취 시 두통/메스꺼움 유발. 나트륨 과다 섭취 주의.</div>
+                </div>
+                <div class="dict-item" data-name="아질산나트륨">
+                    <div class="item-header"><span class="item-name">아질산나트륨 (Nitrites)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">햄, 소시지 발색제.</div>
+                    <div class="item-reason">발암 물질 생성 가능성 및 태아 산소 공급 방해 우려.</div>
+                </div>
+                <div class="dict-item" data-name="타르 색소">
+                    <div class="item-header"><span class="item-name">타르 색소 (Artificial Colors)</span><span
+                            class="risk-badge risk-med">주의</span></div>
+                    <div class="item-desc">황색4호, 적색2호 등 (E102, E129).</div>
+                    <div class="item-reason">어린이 과잉 행동 장애(ADHD) 및 알레르기 유발 가능성.</div>
+                </div>
+                <div class="dict-item" data-name="올레스트라">
+                    <div class="item-header"><span class="item-name">올레스트라 (Olestra)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">지방 대체제.</div>
+                    <div class="item-reason">비타민 A, D, E, K 등 지용성 비타민 흡수 방해.</div>
+                </div>
+                <div class="dict-item" data-name="비스페놀A BPA">
+                    <div class="item-header"><span class="item-name">BPA (Bisphenol A)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">플라스틱 용기, 캔 코팅제.</div>
+                    <div class="item-reason">내분비 교란 물질(환경호르몬). 태아 발달 저해. 플라스틱 가열 금지.</div>
+                </div>
+                <div class="dict-item" data-name="프탈레이트">
+                    <div class="item-header"><span class="item-name">프탈레이트 (Phthalates)</span><span
+                            class="risk-badge risk-high">금지</span></div>
+                    <div class="item-desc">플라스틱 가소제.</div>
+                    <div class="item-reason">생식기 발달 장애 유발 가능성. 배달 음식 플라스틱 용기 주의.</div>
+                </div>
                 <div class="dict-item" data-name="새싹 채소">
                     <div class="item-header"><span class="item-name">생 새싹 채소 (Raw Sprouts)</span><span
                             class="risk-badge risk-high">절대 금지</span></div>
